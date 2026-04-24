@@ -21,7 +21,7 @@ The distinction matters. A crash is easy to classify. What is harder to classify
 
 ## Why OpenSSL Does Not Have High Severity Bugs Here(or at least none that i could find)
 
-This is worth addressing directly, because the answer is not obvious.
+This is worth addressing directly, because the answer is not obvious. And this does NOT mean there arent any high severity bugs, but in the part i looked, i wasnt capable of finding anything crazy(possibly skill issue). So i just decided to document the *cool* things i did find. Also i wrote this so i can cope out my skill issues(or take it seriously, up to you.)
 
 OpenSSL is a library. It does not bind sockets. It does not schedule work. It does not make autonomous decisions about network state. Everything it does is in response to data and function calls handed to it by a caller. That architectural fact is the single biggest reason high severity bugs are rare in its QUIC implementation.
 
